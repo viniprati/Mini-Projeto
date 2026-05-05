@@ -19,7 +19,7 @@ a {
 header {
   background-color: #0f172a;
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 0.7rem 2rem;
 }
 
 nav {
@@ -34,8 +34,25 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+  gap: 1.4rem;
+  align-items: center;
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo-link img {
+  width: 26px;
+  height: 26px;
+  margin: 0;
+}
+
+.logo-link strong {
+  font-size: 1.95rem;
+  line-height: 1;
 }
 
 main {
@@ -78,8 +95,8 @@ p {
 .btn-buy,
 .cta-button {
   display: inline-block;
-  padding: 0.65rem 1rem;
-  border-radius: 8px;
+  padding: 0.68rem 1rem;
+  border-radius: 10px;
   font-weight: 700;
   transition: opacity 0.2s;
 }
@@ -272,6 +289,15 @@ footer {
   nav {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .logo-link strong {
+    font-size: 1.35rem;
   }
 
   .form-grid {
