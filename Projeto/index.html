@@ -7,7 +7,7 @@
     <title>Desenvolvedor Full Stack & Especialista em Bots para Discord | Vinicius Prati</title>
     <meta name="description" content="Desenvolvimento web sob medida e criação de bots personalizados para Discord. Soluções Full Stack para escalar seu negócio ou comunidade.">
     <meta name="keywords" content="desenvolvedor full stack, bots discord personalizados, criação de sites, automação discord, node.js, react, python">
-    <meta name="author" content="[Seu Nome]">
+    <meta name="author" content="Vinicius Prati">
     
     <meta property="og:title" content="Soluções Web e Bots para Discord Personalizados">
     <meta property="og:description" content="Transforme sua ideia em realidade com sistemas web e automações inteligentes.">
@@ -30,21 +30,25 @@
             </div>
             <ul>
                 <li><a href="#servicos">Servi&ccedil;os</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#depoimentos">Destaques</a></li>
                 <li><a href="./paginas/pacotes.html">Pacotes</a></li>
-                <li><a href="./paginas/sobre.html">Sobre</a></li>
-                <li><a href="./paginas/contato.html" class="cta-button">Fazer Or&ccedil;amento</a></li>
+                <li><a href="#contato" class="cta-button">Fazer Or&ccedil;amento</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="hero">
-            <h1>Desenvolvedor Full Stack Web & Especialista em <span>Bots para Discord</span></h1>
-            <p>Desenvolvo ecossistemas digitais completos: desde sites de alta performance até automações complexas para sua comunidade.</p>
-            <div class="buttons">
-                <a href="./paginas/contato.html" class="btn-primary">Solicitar Projeto Personalizado</a>
-                <a href="#servicos" class="btn-secondary">Ver Servi&ccedil;os</a>
+            <div class="hero-texto">
+                <h1>Desenvolvedor Full Stack Web & Especialista em <span>Bots para Discord</span></h1>
+                <p>Desenvolvo ecossistemas digitais completos: desde sites de alta performance até automações complexas para sua comunidade.</p>
+                <div class="buttons">
+                    <a href="#contato" class="btn-primary">Solicitar Projeto Personalizado</a>
+                    <a href="#servicos" class="btn-secondary">Ver Servi&ccedil;os</a>
+                </div>
             </div>
+            <img class="hero-img" src="./images/devops.png" alt="Ilustra&ccedil;&atilde;o de desenvolvimento web e automa&ccedil;&atilde;o">
         </section>
 
         <section id="servicos">
@@ -52,24 +56,38 @@
             <div class="grid-servicos">
                 <article>
                     <h3>Desenvolvimento Web Full Stack</h3>  
-                    <img src="images/html.png" alt="Html icon">
-                    <img src="images/image.png" alt="Discord logo">
-                    <img src="images/css.png" alt="css logo">
-                    <img src="images/database.png" alt="Database logo">
-
+                    <div class="service-icons">
+                        <img src="images/html.png" alt="HTML">
+                        <img src="images/css.png" alt="CSS">
+                        <img src="images/database.png" alt="Banco de dados">
+                    </div>
                     <p>Criação de Landing Pages, Dashboards e sistemas web modernos utilizando tecnologias de ponta (React, Node.js, Bancos de Dados).</p>
                 </article>
 
                 <article>
                     <h3>Bots para Discord Personalizados</h3>
+                    <div class="service-icons">
+                        <img src="images/image.png" alt="Discord">
+                        <img src="images/github.png" alt="GitHub">
+                    </div>
                     <p>Automação de moderação, sistemas de economia, integração com APIs externas e funcionalidades exclusivas para sua guilda.</p>
                 </article>
 
                 <article>
                     <h3>Manutenção e Escalabilidade</h3>
+                    <div class="service-icons">
+                        <img src="images/devops.png" alt="DevOps">
+                        <img src="images/database.png" alt="Banco de dados">
+                    </div>
                     <p>Otimização de sistemas existentes para garantir velocidade, segurança e suporte contínuo.</p>
                 </article>
             </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre o Trabalho</h2>
+            <p>Meu foco é criar soluções digitais sob medida para quem precisa apresentar um serviço, automatizar uma comunidade ou organizar melhor sua presença online.</p>
+            <p>O desenvolvimento prioriza páginas responsivas, estrutura clara, código organizado e uma experiência simples para o usuário final.</p>
         </section>
 
         <section id="pre-definidos">
@@ -101,11 +119,82 @@
             </div>
         </section>
 
+        <section id="depoimentos">
+            <h2>Destaques</h2>
+            <div class="grid-depoimentos">
+                <article class="card">
+                    <p class="card-tag">Performance</p>
+                    <h3>Sites leves</h3>
+                    <p>Landing pages pensadas para carregar rápido e funcionar bem em celulares, tablets e computadores.</p>
+                </article>
+
+                <article class="card">
+                    <p class="card-tag">Comunidade</p>
+                    <h3>Bots úteis</h3>
+                    <p>Automações para moderação, atendimento, tickets e organização de servidores no Discord.</p>
+                </article>
+
+                <article class="card">
+                    <p class="card-tag">Depoimento</p>
+                    <h3>"Atendimento direto"</h3>
+                    <p>Comentário fictício: o projeto ficou claro, responsivo e fácil de apresentar para novos clientes.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Preencha os dados abaixo para pedir um orçamento ou conversar sobre uma ideia de projeto.</p>
+
+            <form action="#" method="POST" class="form-contato">
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="nome">Nome completo</label>
+                        <input id="nome" type="text" name="nome" placeholder="Ex: Vinicius Prati" minlength="3" maxlength="80" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="voce@empresa.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="servico">Tipo de servi&ccedil;o</label>
+                        <select id="servico" name="servico" required>
+                            <option value="" disabled selected>Selecione uma op&ccedil;&atilde;o</option>
+                            <option value="web">Desenvolvimento Web</option>
+                            <option value="bot">Bot para Discord</option>
+                            <option value="web-bot">Web + Bot Integrado</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="prazo">Prazo desejado</label>
+                        <input id="prazo" type="date" name="prazo" required>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="mensagem">Detalhes do projeto</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Conte objetivo, funcionalidades e refer&ecirc;ncias..." minlength="20" maxlength="800" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Solicita&ccedil;&atilde;o</button>
+            </form>
+        </section>
+
     </main>
 
     <footer>
-        <p>&copy; 2026 Vinicius Prati - Todos os direitos reservados.</p>
+        <div class="footer-content">
+            <p><strong>Contato:</strong> prativinicius@gmail.com | Discord: <a href="https://discord.com/users/983870132063453235">devprati</a></p>
+            <div class="social-links">
+                <a href="https://github.com/viniprati">GitHub</a>
+                <a href="https://www.linkedin.com/in/vinicius-prati/">LinkedIn</a>
+                <a href="https://discord.com/users/983870132063453235">Discord</a>
+            </div>
+            <p>&copy; 2026 Vinicius Prati - Todos os direitos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
-
