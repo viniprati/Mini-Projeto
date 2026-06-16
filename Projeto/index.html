@@ -16,6 +16,7 @@
     
     <link rel="icon" href="/Projeto/favicon.ico">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="/Projeto/style.css">
 </head>
 <body>
@@ -48,38 +49,175 @@
                     <a href="#servicos" class="btn-secondary">Ver Servi&ccedil;os</a>
                 </div>
             </div>
-            <img class="hero-img" src="/Projeto/images/devops.png" alt="Ilustra&ccedil;&atilde;o de desenvolvimento web e automa&ccedil;&atilde;o">
+            <div class="hero-visual" aria-hidden="true">
+                <div class="hero-visual-main">
+                    <div class="hero-visual-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <p>Web, automa&ccedil;&atilde;o e integra&ccedil;&atilde;o</p>
+                </div>
+                <div class="hero-stack">
+                    <span>HTML</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>APIs</span>
+                    <span>MongoDB</span>
+                    <span>Discord Bots</span>
+                </div>
+            </div>
         </section>
 
         <section id="servicos">
             <h2>Soluções Sob Medida</h2>
             <div class="grid-servicos">
-                <article>
-                    <h3>Desenvolvimento Web Full Stack</h3>  
-                    <div class="service-icons">
-                        <img src="/Projeto/images/html.png" alt="HTML">
-                        <img src="/Projeto/images/css.png" alt="CSS">
-                        <img src="/Projeto/images/database.png" alt="Banco de dados">
+                <article class="service-card">
+                    <div class="service-icon web-icon" aria-hidden="true">
+                        <i class="fa-solid fa-laptop-code"></i>
                     </div>
+                    <h3>Desenvolvimento Web Full Stack</h3>  
                     <p>Criação de Landing Pages, Dashboards e sistemas web modernos utilizando tecnologias de ponta (React, Node.js, Bancos de Dados).</p>
                 </article>
 
-                <article>
-                    <h3>Bots para Discord Personalizados</h3>
-                    <div class="service-icons">
-                        <img src="/Projeto/images/image.png" alt="Discord">
-                        <img src="/Projeto/images/github.png" alt="GitHub">
+                <article class="service-card">
+                    <div class="service-icon discord-icon" aria-hidden="true">
+                        <i class="fa-solid fa-robot"></i>
                     </div>
+                    <h3>Bots para Discord Personalizados</h3>
                     <p>Automação de moderação, sistemas de economia, integração com APIs externas e funcionalidades exclusivas para sua guilda.</p>
                 </article>
 
-                <article>
-                    <h3>Manutenção e Escalabilidade</h3>
-                    <div class="service-icons">
-                        <img src="/Projeto/images/devops.png" alt="DevOps">
-                        <img src="/Projeto/images/database.png" alt="Banco de dados">
+                <article class="service-card">
+                    <div class="service-icon ops-icon" aria-hidden="true">
+                        <i class="fa-solid fa-gears"></i>
                     </div>
+                    <h3>Manutenção e Escalabilidade</h3>
                     <p>Otimização de sistemas existentes para garantir velocidade, segurança e suporte contínuo.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="tecnologias">
+            <h2>Tecnologias</h2>
+            <p class="section-intro">Ferramentas e stacks que uso com mais frequencia em projetos web, interfaces e automacoes.</p>
+            <div class="tech-grid">
+                <article class="tech-card">
+                    <div class="tech-header">
+                        <div class="service-icon html-icon" aria-hidden="true">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <div class="tech-meta">
+                            <h3>HTML</h3>
+                            <span>70%</span>
+                        </div>
+                    </div>
+                    <div class="tech-bar" aria-hidden="true">
+                        <span style="width: 70%"></span>
+                    </div>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-header">
+                        <div class="service-icon css-icon" aria-hidden="true">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <div class="tech-meta">
+                            <h3>CSS</h3>
+                            <span>50%</span>
+                        </div>
+                    </div>
+                    <div class="tech-bar" aria-hidden="true">
+                        <span style="width: 50%"></span>
+                    </div>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-header">
+                        <div class="service-icon js-icon" aria-hidden="true">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <div class="tech-meta">
+                            <h3>JavaScript</h3>
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <div class="tech-bar" aria-hidden="true">
+                        <span style="width: 90%"></span>
+                    </div>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-header">
+                        <div class="service-icon bootstrap-icon" aria-hidden="true">
+                            <i class="fa-brands fa-bootstrap"></i>
+                        </div>
+                        <div class="tech-meta">
+                            <h3>Bootstrap</h3>
+                            <span>20%</span>
+                        </div>
+                    </div>
+                    <div class="tech-bar" aria-hidden="true">
+                        <span style="width: 20%"></span>
+                    </div>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-header">
+                        <div class="service-icon react-icon" aria-hidden="true">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <div class="tech-meta">
+                            <h3>React</h3>
+                            <span>40%</span>
+                        </div>
+                    </div>
+                    <div class="tech-bar" aria-hidden="true">
+                        <span style="width: 40%"></span>
+                    </div>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-header">
+                        <div class="service-icon mongodb-icon" aria-hidden="true">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="tech-meta">
+                            <h3>MongoDB Atlas</h3>
+                            <span>60%</span>
+                        </div>
+                    </div>
+                    <div class="tech-bar" aria-hidden="true">
+                        <span style="width: 60%"></span>
+                    </div>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-header">
+                        <div class="service-icon api-icon" aria-hidden="true">
+                            <i class="fa-solid fa-plug"></i>
+                        </div>
+                        <div class="tech-meta">
+                            <h3>Integração com APIs</h3>
+                            <span>70%</span>
+                        </div>
+                    </div>
+                    <div class="tech-bar" aria-hidden="true">
+                        <span style="width: 70%"></span>
+                    </div>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-header">
+                        <div class="service-icon discord-stack-icon" aria-hidden="true">
+                            <i class="fa-brands fa-discord"></i>
+                        </div>
+                        <div class="tech-meta">
+                            <h3>Discord.js / Discord.py</h3>
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <div class="tech-bar" aria-hidden="true">
+                        <span style="width: 90%"></span>
+                    </div>
                 </article>
             </div>
         </section>
