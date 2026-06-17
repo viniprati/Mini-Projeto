@@ -695,6 +695,39 @@ footer {
   color: #cbd5e1;
 }
 
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.produto-card {
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-soft);
+}
+
+#exportar-json {
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#resultado-json {
+  margin-top: 1rem;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: var(--radius-card);
+  background: #f1f5f9;
+  color: var(--color-dark);
+}
+
 /* Links sociais do rodape */
 .social-links {
   display: flex;
