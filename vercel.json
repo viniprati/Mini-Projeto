@@ -2,13 +2,6 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/Projeto/index.html",
-      "permanent": false
-    }
-  ],
   "headers": [
     {
       "source": "/Projeto/images/(.*)",
@@ -29,7 +22,7 @@
       ]
     },
     {
-      "source": "/Projeto/(.*).css",
+      "source": "/Projeto/css/(.*)",
       "headers": [
         {
           "key": "Cache-Control",

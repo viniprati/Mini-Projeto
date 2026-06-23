@@ -1,0 +1,25 @@
+@import url("./global.css");
+
+.plano {
+  min-height: 100%;
+}
+
+.plano-destaque {
+  border-color: var(--color-primary);
+  background: #eef6ff;
+}
+
+.plano .botao {
+  margin-top: auto;
+}
+
+.selo {
+  width: fit-content;
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  color: var(--color-primary-dark);
+  background: #dbeafe;
+  font-size: 0.78rem;
+  font-weight: 800;
+}

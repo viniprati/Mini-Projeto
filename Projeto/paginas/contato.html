@@ -1,104 +1,114 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato | Vinicius Prati</title>
-    <link rel="stylesheet" href="../style.css">
+    <meta name="description" content="Formul&aacute;rio para solicitar or&ccedil;amento de sites, automa&ccedil;&otilde;es e bots para Discord.">
+    <link rel="stylesheet" href="../css/contato.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="../index.html" class="logo-link">
-                    <img src="../images/github.png" alt="GitHub">
-                    <strong>Vinicius Prati</strong>
-                </a>
-            </div>
-            <ul>
-                <li><a href="../index.html">In&iacute;cio</a></li>
-                <li><a href="../index.html#servicos">Servi&ccedil;os</a></li>
+    <header class="topo">
+        <nav class="nav" aria-label="Navega&ccedil;&atilde;o principal">
+            <a href="../../index.html" class="logo" aria-label="Ir para o in&iacute;cio">
+                <img src="../images/github.png" alt="" width="32" height="32">
+                <strong>Vinicius Prati</strong>
+            </a>
+
+            <ul class="menu">
+                <li><a href="../../index.html">In&iacute;cio</a></li>
+                <li><a href="../../index.html#servicos">Servi&ccedil;os</a></li>
                 <li><a href="./pacotes.html">Pacotes</a></li>
                 <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="./contato.html" class="cta-button">Fazer Or&ccedil;amento</a></li>
+                <li><a href="./contato.html" class="botao" aria-current="page">Or&ccedil;amento</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="contato">
-            <h2>Vamos tirar seu projeto do papel?</h2>
-            <p>Preencha o formulário ou me chame diretamente no Discord.</p>
-            
-            <form action="#" method="POST" class="form-contato">
-                <div class="form-grid">
-                    <div class="form-field">
+        <section class="titulo" aria-labelledby="contato-title">
+            <p class="etiqueta">Contato</p>
+            <h1 id="contato-title">Conte o que voc&ecirc; quer construir</h1>
+            <p>O formul&aacute;rio abaixo organiza as informa&ccedil;&otilde;es iniciais para estimar escopo, prazo e prioridade.</p>
+        </section>
+
+        <section class="contato" aria-label="Formul&aacute;rio de contato">
+            <form action="#" method="post" class="formulario">
+                <div class="campos">
+                    <div class="campo">
                         <label for="nome">Nome completo</label>
                         <input id="nome" type="text" name="nome" placeholder="Ex: Vinicius Prati" minlength="3" maxlength="80" autocomplete="name" required>
                     </div>
 
-                    <div class="form-field">
+                    <div class="campo">
                         <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="voce@empresa.com" autocomplete="email" required>
+                        <input id="email" type="email" name="email" placeholder="voce@email.com" autocomplete="email" required>
                     </div>
 
-                    <div class="form-field">
-                        <label for="telefone">Telefone (WhatsApp)</label>
-                        <input id="telefone" type="tel" name="telefone" placeholder="(27) 99999-9999" pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$" autocomplete="tel-national" required>
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input id="telefone" type="tel" name="telefone" placeholder="(27) 99999-9999" autocomplete="tel-national">
                     </div>
 
-                    <div class="form-field">
-                        <label for="servico">Tipo de serviço</label>
+                    <div class="campo">
+                        <label for="servico">Tipo de servi&ccedil;o</label>
                         <select id="servico" name="servico" required>
-                            <option value="" disabled selected>Selecione uma opção</option>
-                            <option value="web">Desenvolvimento Web</option>
+                            <option value="" disabled selected>Selecione uma op&ccedil;&atilde;o</option>
+                            <option value="site">Site ou landing page</option>
                             <option value="bot">Bot para Discord</option>
-                            <option value="web-bot">Web + Bot Integrado</option>
-                            <option value="outro">Outro</option>
+                            <option value="integracao">Integra&ccedil;&atilde;o com API</option>
+                            <option value="sistema">Sistema sob medida</option>
                         </select>
                     </div>
 
-                    <div class="form-field">
-                        <label for="orcamento">Faixa de orçamento</label>
+                    <div class="campo">
+                        <label for="orcamento">Faixa de or&ccedil;amento</label>
                         <select id="orcamento" name="orcamento" required>
                             <option value="" disabled selected>Selecione uma faixa</option>
-                            <option value="ate-1000">Até R$ 1.000</option>
+                            <option value="ate-1000">At&eacute; R$ 1.000</option>
                             <option value="1000-3000">R$ 1.000 a R$ 3.000</option>
                             <option value="3000-7000">R$ 3.000 a R$ 7.000</option>
-                            <option value="7000-mais">Acima de R$ 7.000</option>
+                            <option value="acima-7000">Acima de R$ 7.000</option>
                         </select>
                     </div>
 
-                    <div class="form-field">
+                    <div class="campo">
                         <label for="prazo">Prazo desejado</label>
-                        <input id="prazo" type="date" name="prazo" required>
+                        <input id="prazo" type="date" name="prazo">
                     </div>
                 </div>
 
-                <div class="form-field">
+                <fieldset class="opcoes">
+                    <legend>Prioridade do projeto</legend>
+                    <label><input type="radio" name="prioridade" value="normal" checked> Normal</label>
+                    <label><input type="radio" name="prioridade" value="alta"> Alta</label>
+                    <label><input type="radio" name="prioridade" value="urgente"> Urgente</label>
+                </fieldset>
+
+                <div class="campo">
                     <label for="mensagem">Detalhes do projeto</label>
-                    <textarea id="mensagem" name="mensagem" placeholder="Me conte objetivo, funcionalidades e referências..." minlength="20" maxlength="1200" required></textarea>
+                    <textarea id="mensagem" name="mensagem" placeholder="Descreva objetivo, funcionalidades, p&uacute;blico e refer&ecirc;ncias..." minlength="20" maxlength="1200" required></textarea>
                 </div>
 
-                <div class="form-field checkbox-field">
+                <div class="checkbox">
                     <input id="aceite" type="checkbox" name="aceite" required>
-                    <label for="aceite">Concordo com o uso dos meus dados para retorno de contato.</label>
+                    <label for="aceite">Autorizo o uso das informa&ccedil;&otilde;es para retorno de contato.</label>
                 </div>
 
-                <button type="submit" class="btn-submit">Enviar Proposta</button>
+                <button type="submit" class="botao envio">Enviar solicita&ccedil;&atilde;o</button>
             </form>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <p><strong>Contato:</strong> prativinicius@gmail.com | Discord: <a href="https://discord.com/users/983870132063453235">devprati</a></p>
-            <div class="social-links">
-                <a href="https://github.com/viniprati">GitHub</a>
-                <a href="https://www.linkedin.com/in/vinicius-prati/">LinkedIn</a>
-                <a href="https://discord.com/users/983870132063453235">Discord</a>
-            </div>
-            <p>&copy; 2026 Vinicius Prati - Todos os direitos reservados.</p>
+    <footer class="rodape">
+        <div class="rodape-area">
+            <p><strong>Contato:</strong> prativinicius@gmail.com</p>
+            <ul class="links">
+                <li><a href="https://github.com/viniprati">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/vinicius-prati/">LinkedIn</a></li>
+                <li><a href="https://discord.com/users/983870132063453235">Discord</a></li>
+            </ul>
+            <p>&copy; 2026 Vinicius Prati.</p>
         </div>
     </footer>
 </body>

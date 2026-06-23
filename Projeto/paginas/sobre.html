@@ -1,46 +1,79 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre | Vinicius Prati</title>
-    <link rel="stylesheet" href="../style.css">
+    <meta name="description" content="Conhe&ccedil;a a forma de trabalho usada em projetos web, automa&ccedil;&otilde;es e bots para Discord.">
+    <link rel="stylesheet" href="../css/sobre.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="../index.html" class="logo-link">
-                    <img src="../images/github.png" alt="GitHub">
-                    <strong>Vinicius Prati</strong>
-                </a>
-            </div>
-            <ul>
-                <li><a href="../index.html">In&iacute;cio</a></li>
-                <li><a href="../index.html#servicos">Servi&ccedil;os</a></li>
+    <header class="topo">
+        <nav class="nav" aria-label="Navega&ccedil;&atilde;o principal">
+            <a href="../../index.html" class="logo" aria-label="Ir para o in&iacute;cio">
+                <img src="../images/github.png" alt="" width="32" height="32">
+                <strong>Vinicius Prati</strong>
+            </a>
+
+            <ul class="menu">
+                <li><a href="../../index.html">In&iacute;cio</a></li>
+                <li><a href="../../index.html#servicos">Servi&ccedil;os</a></li>
                 <li><a href="./pacotes.html">Pacotes</a></li>
-                <li><a href="./sobre.html">Sobre</a></li>
-                <li><a href="./contato.html" class="cta-button">Fazer Or&ccedil;amento</a></li>
+                <li><a href="./sobre.html" aria-current="page">Sobre</a></li>
+                <li><a href="./contato.html" class="botao">Or&ccedil;amento</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="sobre">
-            <h2>Por que trabalhar comigo?</h2>
-            <p>Com experi&ecirc;ncia em arquitetura de software, foco em entregar c&oacute;digo limpo, documentado e focado na experi&ecirc;ncia do usu&aacute;rio final.</p>
+        <section class="titulo" aria-labelledby="sobre-title">
+            <p class="etiqueta">Sobre</p>
+            <h1 id="sobre-title">Trabalho com foco em clareza, responsividade e organiza&ccedil;&atilde;o</h1>
+            <p>O objetivo &eacute; criar projetos que possam ser usados, apresentados e mantidos com facilidade.</p>
+        </section>
+
+        <section class="duas-colunas" aria-labelledby="processo-title">
+            <div>
+                <h2 id="processo-title">Processo de desenvolvimento</h2>
+                <p>Cada projeto come&ccedil;a pela defini&ccedil;&atilde;o do objetivo principal. Depois disso, a estrutura das p&aacute;ginas, formul&aacute;rios, imagens e componentes &eacute; planejada para evitar excesso de c&oacute;digo e facilitar futuras altera&ccedil;&otilde;es.</p>
+                <p>Tamb&eacute;m seguimos pr&aacute;ticas de Clean Code, como nomes claros, separa&ccedil;&atilde;o de responsabilidades, reutiliza&ccedil;&atilde;o de estilos e organiza&ccedil;&atilde;o dos arquivos por fun&ccedil;&atilde;o.</p>
+                <p>Assim, o c&oacute;digo fica mais leg&iacute;vel para apresentar, explicar e manter depois.</p>
+            </div>
+
+            <figure class="imagem">
+                <img src="../images/database.png" alt="Representa&ccedil;&atilde;o visual de dados e integra&ccedil;&otilde;es" width="128" height="128">
+                <figcaption>Organiza&ccedil;&atilde;o visual tamb&eacute;m faz parte da manuten&ccedil;&atilde;o do c&oacute;digo.</figcaption>
+            </figure>
+        </section>
+
+        <section class="secao" aria-labelledby="video-title">
+            <div class="cabecalho">
+                <p class="etiqueta">Boas pr&aacute;ticas</p>
+                <h2 id="video-title">Clean Code na pr&aacute;tica</h2>
+                <p>O v&iacute;deo abaixo complementa essa ideia, mostrando princ&iacute;pios simples para escrever c&oacute;digo mais organizado e f&aacute;cil de manter.</p>
+            </div>
+
+            <div class="video">
+                <iframe
+                    src="https://www.youtube-nocookie.com/embed/GmXPwRNIrAU"
+                    title="10 Coding Principles Explained in 5 Minutes"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <p><strong>Contato:</strong> prativinicius@gmail.com | Discord: <a href="https://discord.com/users/983870132063453235">devprati</a></p>
-            <div class="social-links">
-                <a href="https://github.com/viniprati">GitHub</a>
-                <a href="https://www.linkedin.com/in/vinicius-prati/">LinkedIn</a>
-                <a href="https://discord.com/users/983870132063453235">Discord</a>
-            </div>
-            <p>&copy; 2026 Vinicius Prati - Todos os direitos reservados.</p>
+    <footer class="rodape">
+        <div class="rodape-area">
+            <p><strong>Contato:</strong> prativinicius@gmail.com</p>
+            <ul class="links">
+                <li><a href="https://github.com/viniprati">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/vinicius-prati/">LinkedIn</a></li>
+                <li><a href="https://discord.com/users/983870132063453235">Discord</a></li>
+            </ul>
+            <p>&copy; 2026 Vinicius Prati.</p>
         </div>
     </footer>
 </body>

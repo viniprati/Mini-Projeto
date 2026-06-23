@@ -1,0 +1,124 @@
+@import url("./global.css");
+
+.contato {
+  margin-bottom: var(--space-lg);
+  padding: var(--space-xl);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.formulario {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.campos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
+}
+
+.campo {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.campo label,
+.opcoes legend,
+.checkbox label {
+  color: var(--color-heading);
+  font-weight: 800;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-sm);
+  padding: 0.72rem 0.78rem;
+  color: var(--color-heading);
+  background: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campo textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-focus);
+}
+
+.campo input:invalid:not(:placeholder-shown),
+.campo textarea:invalid:not(:placeholder-shown) {
+  border-color: var(--color-danger);
+}
+
+.opcoes {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.opcoes legend {
+  padding: 0 0.35rem;
+}
+
+.opcoes label,
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.checkbox {
+  align-items: flex-start;
+}
+
+.opcoes input,
+.checkbox input {
+  width: 18px;
+  height: 18px;
+  margin-top: 0.2rem;
+  accent-color: var(--color-primary);
+}
+
+.envio {
+  justify-self: start;
+}
+
+@media (max-width: 680px) {
+  .contato {
+    padding: var(--space-lg);
+  }
+
+  .campos {
+    grid-template-columns: 1fr;
+  }
+
+  .opcoes {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .envio {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .contato {
+    padding: var(--space-md);
+  }
+}
